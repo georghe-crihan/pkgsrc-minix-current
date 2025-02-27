@@ -1,0 +1,180 @@
+--- dbus/dbus-sysdeps-unix.c.orig	Fri Sep 28 19:31:47 2012
++++ dbus/dbus-sysdeps-unix.c	Fri Feb  1 23:52:18 2013
+@@ -22,6 +22,8 @@
+  *
+  */
+ 
++#define _NETBSD_SOURCE
++
+ #include <config.h>
+ 
+ #include "dbus-internals.h"
+@@ -72,6 +74,10 @@
+ #include <ucred.h>
+ #endif
+ 
++#ifdef __NetBSD__
++#include <sys/un.h>
++#endif
++
+ #ifdef HAVE_ADT
+ #include <bsm/adt.h>
+ #endif
+@@ -122,7 +128,33 @@
+ 
+ #endif /* Solaris */
+ 
++#ifdef LOCAL_PEEREID
+ static dbus_bool_t
++dbus_nb_getpeereid(int fd, pid_t *pid, uid_t *uid, gid_t *gid)
++{
++  struct unpcbid cred;
++  socklen_t len = sizeof(cred);
++
++  _dbus_verbose ("dbus_nb_getpeereid: enter, fd=%d\n");
++  if (getsockopt (fd, 0, LOCAL_PEEREID, &cred, &len) < 0)
++    {
++      _dbus_verbose ("dbus_nb_getpeereid: getsockopt LOCAL_PEEREID failed: %s\n", strerror(errno));
++      return FALSE;
++    }
++  if (pid)
++    *pid = cred.unp_pid;
++  if (uid)
++    *uid = cred.unp_euid;
++  if (gid)
++    *gid = cred.unp_egid;
++
++  _dbus_verbose ("dbus_nb_getpeereid: returning TRUE, pid=%d uid=%d gid=%d\n",
++                cred.unp_pid, cred.unp_euid, cred.unp_egid);
++  return TRUE;
++}
++#endif
++
++static dbus_bool_t
+ _dbus_open_socket (int              *fd_p,
+                    int               domain,
+                    int               type,
+@@ -336,6 +368,7 @@
+       struct cmsghdr *cm;
+       dbus_bool_t found = FALSE;
+ 
++#ifdef MSG_CTRUNC
+       if (m.msg_flags & MSG_CTRUNC)
+         {
+           /* Hmm, apparently the control data was truncated. The bad
+@@ -347,6 +380,7 @@
+           _dbus_string_set_length (buffer, start);
+           return -1;
+         }
++#endif
+ 
+       for (cm = CMSG_FIRSTHDR(&m); cm; cm = CMSG_NXTHDR(&m, cm))
+         if (cm->cmsg_level == SOL_SOCKET && cm->cmsg_type == SCM_RIGHTS)
+@@ -969,7 +1003,7 @@
+ {
+   dbus_bool_t retval = TRUE;
+ 
+-#if defined(HAVE_CMSGCRED)
++#if defined(HAVE_CMSGCRED) || defined(LOCAL_PEEREID)
+   /* NOOP just to make sure only one codepath is used
+    *      and to prefer CMSGCRED
+    */
+@@ -1674,6 +1708,11 @@
+     char cred[CMSG_SPACE (sizeof (struct cmsgcred))];
+   } cmsg;
+ 
++#elif defined(LOCAL_PEEREID)
++  pid_t sockpid;
++  uid_t sockuid;
++  gid_t sockgid;
++
+ #elif defined(LOCAL_CREDS)
+   struct {
+     struct cmsghdr hdr;
+@@ -1709,11 +1748,16 @@
+   msg.msg_iov = &iov;
+   msg.msg_iovlen = 1;
+ 
+-#if defined(HAVE_CMSGCRED) || defined(LOCAL_CREDS)
++#if (defined(HAVE_CMSGCRED) || defined(LOCAL_CREDS)) && !defined(LOCAL_PEEREID)
+   _DBUS_ZERO(cmsg);
++#ifdef HAVE_CMSGCRED
+   msg.msg_control = (caddr_t) &cmsg;
+   msg.msg_controllen = CMSG_SPACE (sizeof (struct cmsgcred));
++#else /* defined(LOCAL_CREDS) */
++  msg.msg_control = &cmsg;
++  msg.msg_controllen = sizeof (cmsg);
+ #endif
++#endif
+ 
+  again:
+   bytes_read = recvmsg (client_fd, &msg, 0);
+@@ -1749,9 +1793,13 @@
+       return FALSE;
+     }
+ 
+-#if defined(HAVE_CMSGCRED) || defined(LOCAL_CREDS)
++#if (defined(HAVE_CMSGCRED) || defined(LOCAL_CREDS)) && !defined(LOCAL_PEEREID)
++#ifdef HAVE_CMSGCRED
+   if (cmsg.hdr.cmsg_len < CMSG_LEN (sizeof (struct cmsgcred))
+ 		  || cmsg.hdr.cmsg_type != SCM_CREDS)
++#else /* defined(LOCAL_CREDS) */
++  if (cmsg.hdr.cmsg_len < sizeof (cmsg) || cmsg.hdr.cmsg_type != SCM_CREDS)
++#endif
+     {
+       dbus_set_error (error, DBUS_ERROR_FAILED,
+                       "Message from recvmsg() was not SCM_CREDS");
+@@ -1787,6 +1835,16 @@
+     cred = (struct cmsgcred *) CMSG_DATA (&cmsg.hdr);
+     pid_read = cred->cmcred_pid;
+     uid_read = cred->cmcred_euid;
++#elif defined(LOCAL_PEEREID)
++    if (dbus_nb_getpeereid(client_fd, &sockpid, &sockuid, &sockgid) == TRUE)
++      {
++       pid_read = sockpid;
++       uid_read = sockuid;
++      }
++    else
++      {
++        _dbus_verbose ("Failed to dbus_nb_getpeereid() credentials: %s\n", _dbus_strerror (errno));
++      }
+ #elif defined(LOCAL_CREDS)
+     pid_read = DBUS_PID_UNSET;
+     uid_read = cmsg.cred.sc_uid;
+@@ -1848,7 +1906,7 @@
+       }
+     if (ucred != NULL)
+       ucred_free (ucred);
+-#else /* !SO_PEERCRED && !HAVE_CMSGCRED && !HAVE_GETPEEREID && !HAVE_GETPEERUCRED */
++#else /* !SO_PEERCRED && !HAVE_CMSGCRED && !HAVE_GETPEEREID && !HAVE_GETPEERUCRED && !LOCAL_PEEREID */
+     _dbus_verbose ("Socket credentials not supported on this OS\n");
+ #endif
+   }
+@@ -2060,12 +2118,16 @@
+     struct passwd p_str;
+ 
+     /* retrieve maximum needed size for buf */
++#ifdef _SC_GETPW_R_SIZE_MAX
+     buflen = sysconf (_SC_GETPW_R_SIZE_MAX);
+ 
+     /* sysconf actually returns a long, but everything else expects size_t,
+      * so just recast here.
+      * https://bugs.freedesktop.org/show_bug.cgi?id=17061
+      */
++#else
++    buflen = -1;
++#endif
+     if ((long) buflen <= 0)
+       buflen = 1024;
+ 
+@@ -2525,6 +2587,10 @@
+       _DBUS_STRUCT_OFFSET (DBusPollFD, revents) ==
+       _DBUS_STRUCT_OFFSET (struct pollfd, revents))
+     {
++      if (timeout_milliseconds < -1) {
++        _dbus_warn("_dbus_poll: timeout = %d (fixed)\n", timeout_milliseconds);
++        timeout_milliseconds = -1;
++      }
+       return poll ((struct pollfd*) fds,
+                    n_fds,
+                    timeout_milliseconds);
