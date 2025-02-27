@@ -1,0 +1,5 @@
+#!/bin/sh
+wrapperlog="${TOOLS_WRAPPER_LOG-/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/.work.log}"
+/bin/echo "[*] "/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/.tools/bin/intltool-extract" $@" >> $wrapperlog
+/bin/echo "<.> exit 1" >> $wrapperlog
+exit 1

@@ -1,0 +1,6 @@
+@name bmake-20110606nb1
+@blddep bootstrap-mk-files-20120415
+@pkgdep bootstrap-mk-files-[0-9]*
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 01:22:29 zuntum Exp $
+bin/bmake
+man/man1/bmake.1

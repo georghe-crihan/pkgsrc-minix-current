@@ -1,0 +1,9 @@
+#!/bin/sh
+wrapperlog="${TOOLS_WRAPPER_LOG-/usr/src/pkgsrc/work/pkgtools/bootstrap-mk-files/work/.work.log}"
+lang="fortran"
+msg="*** Please consider adding $lang to USE_LANGUAGES in the package Makefile."
+/bin/echo "$msg" >> $wrapperlog
+/bin/echo "$msg" > /usr/src/pkgsrc/work/pkgtools/bootstrap-mk-files/work/.warning/fortran-fail-wrapper
+/bin/echo "PKGSRC-WARNING: Something is trying to run the $lang compiler," 1>&2
+/bin/echo "PKGSRC-WARNING: but it is not added to USE_LANGUAGES in the package Makefile." 1>&2
+exit 1

@@ -1,0 +1,34 @@
+ABI=
+BUILD_DATE=2025-02-26 10:15:03 +0000
+BUILD_HOST=Minix minix 3.4.0 Minix 3.4.0 (GENERIC) i386
+CATEGORIES=pkgtools
+CFLAGS=-Wno-error -march=i586
+CMAKE_ARGS=
+CONFIGURE_ARGS=
+CONFIGURE_ENV=ac_cv_func_msync=no gl_have_pthread=no INSTALL_INFO= MAKEINFO=/usr/src/pkgsrc/work/pkgtools/bootstrap-mk-files/work/.tools/bin/makeinfo FLEX= BISON= PKG_CONFIG= PKG_CONFIG_LIBDIR=/usr/src/pkgsrc/work/pkgtools/bootstrap-mk-files/work/.buildlink/lib/pkgconfig:/usr/src/pkgsrc/work/pkgtools/bootstrap-mk-files/work/.buildlink/share/pkgconfig PKG_CONFIG_LOG=/usr/src/pkgsrc/work/pkgtools/bootstrap-mk-files/work/.pkg-config.log PKG_CONFIG_PATH= MAKE=make WRAPPER_DEBUG=no WRAPPER_UPDATE_CACHE=yes CC=gcc CFLAGS=-Wno-error\ -march=i586 CPPFLAGS= CXX=g++ CXXFLAGS=-Wno-error\ -march=i586 COMPILER_RPATH_FLAG=-Wl,-rpath, F77=f77 FC=f77 FFLAGS=-O LANG=C LC_ALL=C LC_COLLATE=C LC_CTYPE=C LC_MESSAGES=C LC_MONETARY=C LC_NUMERIC=C LC_TIME=C LDFLAGS=-Wl,-rpath,/usr/pkg/lib LINKER_RPATH_FLAG=-rpath PATH=/usr/src/pkgsrc/work/pkgtools/bootstrap-mk-files/work/.wrapper/bin:/usr/src/pkgsrc/work/pkgtools/bootstrap-mk-files/work/.buildlink/bin:/usr/src/pkgsrc/work/pkgtools/bootstrap-mk-files/work/.tools/bin:/usr/pkg/bin:/sbin:/usr/sbin:/bin:/usr/bin:/usr/pkg/sbin:/usr/pkg/bin:/usr/X11R7/bin:/usr/X11R6/bin:/usr/local/sbin:/usr/local/bin:/usr/pkg/bin:/usr/X11R7/bin PREFIX=/usr/pkg PKG_SYSCONFDIR=/usr/pkg/etc CPP=cpp CXXCPP=cpp HOME=/usr/src/pkgsrc/work/pkgtools/bootstrap-mk-files/work/.home
+CPPFLAGS=  
+FFLAGS=-O
+HOMEPAGE=http://www.pkgsrc.org/
+LDFLAGS=  -Wl,-rpath,/usr/pkg/lib
+LICENSE=
+LOCALBASE=/usr/pkg
+MACHINE_ARCH=i386
+MACHINE_GNU_ARCH=i386
+MAINTAINER=pkgsrc-users@NetBSD.org
+NO_BIN_ON_CDROM=
+NO_BIN_ON_FTP=
+NO_SRC_ON_CDROM=
+NO_SRC_ON_FTP=
+OBJECT_FMT=a.out
+OPSYS=Minix
+OS_VERSION=3.4.0
+PKGGNUDIR=gnu/
+PKGINFODIR=info
+PKGMANDIR=man
+PKGPATH=pkgtools/bootstrap-mk-files
+PKGTOOLS_VERSION=20091115
+PKG_SYSCONFBASEDIR=/usr/pkg/etc
+PKG_SYSCONFDIR=/usr/pkg/etc
+RESTRICTED=
+_PLIST_IGNORE_FILES=
+_USE_DESTDIR=user-destdir

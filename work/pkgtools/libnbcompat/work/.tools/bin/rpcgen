@@ -1,0 +1,5 @@
+#!/bin/sh
+wrapperlog="${TOOLS_WRAPPER_LOG-/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/.work.log}"
+/bin/echo "[*] "/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/.tools/bin/rpcgen" $@" >> $wrapperlog
+/bin/echo "<.> CPP=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/.wrapper/bin/cpp /bin/false  "$@"" >> $wrapperlog
+CPP=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/.wrapper/bin/cpp /bin/false  "$@"

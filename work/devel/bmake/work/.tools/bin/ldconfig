@@ -1,0 +1,5 @@
+#!/bin/sh
+wrapperlog="${TOOLS_WRAPPER_LOG-/usr/src/pkgsrc/work/devel/bmake/work/.work.log}"
+/bin/echo "[*] "/usr/src/pkgsrc/work/devel/bmake/work/.tools/bin/ldconfig" $@" >> $wrapperlog
+/bin/echo "<.> exit 0" >> $wrapperlog
+exit 0

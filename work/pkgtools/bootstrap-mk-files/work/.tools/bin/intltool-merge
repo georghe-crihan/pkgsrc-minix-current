@@ -1,0 +1,5 @@
+#!/bin/sh
+wrapperlog="${TOOLS_WRAPPER_LOG-/usr/src/pkgsrc/work/pkgtools/bootstrap-mk-files/work/.work.log}"
+/bin/echo "[*] "/usr/src/pkgsrc/work/pkgtools/bootstrap-mk-files/work/.tools/bin/intltool-merge" $@" >> $wrapperlog
+/bin/echo "<.> exit 1" >> $wrapperlog
+exit 1

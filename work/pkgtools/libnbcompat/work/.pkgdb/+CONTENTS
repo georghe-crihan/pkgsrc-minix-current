@@ -1,0 +1,83 @@
+@cwd /usr/pkg
+@name libnbcompat-20120702
+@comment $NetBSD: PLIST,v 1.18 2009/06/14 18:11:02 joerg Exp $
+include/nbcompat.h
+@comment MD5:b309ea9e091a0d4fb54a96e763644287
+include/nbcompat/assert.h
+@comment MD5:6f8fb447128faf320477d2ce24dc3929
+include/nbcompat/cdefs.h
+@comment MD5:d3fad57b3efad0668544cb3309d01464
+include/nbcompat/ctype.h
+@comment MD5:91a6586f638c150c3cb44ba2a8b1f361
+include/nbcompat/db.h
+@comment MD5:ee9787e8926afce335b44dc47837d6e0
+include/nbcompat/dirent.h
+@comment MD5:434ba5b747a60301fef90cb07aff3f9d
+include/nbcompat/endian.h
+@comment MD5:ed7f44c4cbb16cb7d7b17ca141e5f4f1
+include/nbcompat/err.h
+@comment MD5:3d2f699635607aa06db3c3d94468e8fc
+include/nbcompat/fnmatch.h
+@comment MD5:a5348bd263cf84ad6bc796c53717679b
+include/nbcompat/fts.h
+@comment MD5:e49b3b385569e27ee3db01866589c322
+include/nbcompat/getopt.h
+@comment MD5:b3d23e226b3a61bae8a050af77a38608
+include/nbcompat/glob.h
+@comment MD5:8ed7b522739f310eb3582af867bbad53
+include/nbcompat/grp.h
+@comment MD5:5b81ef4b7dfa6173e0aceb4ffd2c1e72
+include/nbcompat/limits.h
+@comment MD5:f3cb7a00a10d4c79603016c87f42209c
+include/nbcompat/md5.h
+@comment MD5:44fdda04f35ae8f2384845fb52ebd011
+include/nbcompat/nbconfig.h
+@comment MD5:8e54f47a16007e921e543a84f30cf2e1
+include/nbcompat/netdb.h
+@comment MD5:32c88e29f1adf86aee31acca0db89f3e
+include/nbcompat/param.h
+@comment MD5:58cfaa1a20266e0ebc4e1093a82955e6
+include/nbcompat/paths.h
+@comment MD5:fdf4b881dd15a283b500e0a6540d001b
+include/nbcompat/poll.h
+@comment MD5:d7d5c37910f298e93f48559a6a1e119b
+include/nbcompat/pwd.h
+@comment MD5:2c84a6d34df6f0237c2152f0aea8fe2f
+include/nbcompat/queue.h
+@comment MD5:f559d8c545ff1277d279780002e0151e
+include/nbcompat/regex.h
+@comment MD5:49eb1352ed7ef792bd71652db77e1dec
+include/nbcompat/rmd160.h
+@comment MD5:6752147e93dd4622d0d4fbac04a2f338
+include/nbcompat/sha1.h
+@comment MD5:903499e2b447d1b08c432bd2231fc0c2
+include/nbcompat/sha2.h
+@comment MD5:117413b278bdba5f61f7630ac6453ab2
+include/nbcompat/stat.h
+@comment MD5:ce04b9411ca282102fceeddc46ceddf3
+include/nbcompat/statvfs.h
+@comment MD5:ff894bb1df48582d4c4f9da2f8fa05f8
+include/nbcompat/stdbool.h
+@comment MD5:e0e48b7f875a50e61e8db55f83fb196d
+include/nbcompat/stdio.h
+@comment MD5:f1d1075d436057e29ba9e56c2d5ecbb8
+include/nbcompat/stdlib.h
+@comment MD5:99d058d6f54a52c9aa042bc7ea5a5083
+include/nbcompat/string.h
+@comment MD5:26a49963f7b539bd53f6f7ebc68c7c6e
+include/nbcompat/termcap.h
+@comment MD5:78324ef7ee40467fec51b591942a742c
+include/nbcompat/time.h
+@comment MD5:af30e8e0dbe5858911780587d6638229
+include/nbcompat/types.h
+@comment MD5:2ffcfffa52889445bc371835277221fe
+include/nbcompat/tzfile.h
+@comment MD5:eeccffed4f28c060c320c52aab56dc1f
+include/nbcompat/unistd.h
+@comment MD5:b77c235c842b5342b9552b19500ad6f6
+include/nbcompat/util.h
+@comment MD5:41d384569de98eb5937aa2f269966116
+include/nbcompat/vis.h
+@comment MD5:77fdf09a27bd1a6a91b2342ffe6d6978
+lib/libnbcompat.a
+@comment MD5:71504615999ae678a601f3151d3af414

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!-- git web interface version 2.25.1, (C) 2005-2006, Kay Sievers <kay.sievers@vrfy.org>, Christian Gierke -->
+<!-- git core binaries version 2.25.1 -->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="gitweb/2.25.1 git/2.25.1"/>
+<meta name="robots" content="index, nofollow"/>
+<title>git.minix3.org Git - pkgsrc.git/tree</title>
+<link rel="stylesheet" type="text/css" href="static/gitweb.css"/>
+<link rel="alternate" title="pkgsrc.git - log - RSS feed" href="/index.cgi?p=pkgsrc.git;a=rss" type="application/rss+xml" />
+<link rel="alternate" title="pkgsrc.git - log - RSS feed (no merges)" href="/index.cgi?p=pkgsrc.git;a=rss;opt=--no-merges" type="application/rss+xml" />
+<link rel="alternate" title="pkgsrc.git - log - Atom feed" href="/index.cgi?p=pkgsrc.git;a=atom" type="application/atom+xml" />
+<link rel="alternate" title="pkgsrc.git - log - Atom feed (no merges)" href="/index.cgi?p=pkgsrc.git;a=atom;opt=--no-merges" type="application/atom+xml" />
+<link rel="shortcut icon" href="static/git-favicon.png" type="image/png" />
+</head>
+<body>
+<div class="page_header">
+<a href="http://git-scm.com/" title="git homepage"><img alt="git" class="logo" height="27" src="static/git-logo.png" width="72" /></a><a href="/index.cgi">projects</a> / <a href="/index.cgi?p=pkgsrc.git;a=summary">pkgsrc.git</a> / tree
+</div>
+<form method="get" action="/index.cgi" enctype="multipart/form-data"><div class="search">
+<input name="p" type="hidden" value="pkgsrc.git" />
+<input name="a" type="hidden" value="search" />
+<input name="h" type="hidden" value="HEAD" />
+<select name="st" >
+<option selected="selected" value="commit">commit</option>
+<option value="grep">grep</option>
+<option value="author">author</option>
+<option value="committer">committer</option>
+<option value="pickaxe">pickaxe</option>
+</select> <a href="/index.cgi?p=pkgsrc.git;a=search_help" title="search help">?</a> search:
+<input type="text" name="s"  />
+<span title="Extended regular expression"><label><input type="checkbox" name="sr" value="1" />re</label></span></div>
+</form>
+<div class="page_nav">
+<a href="/index.cgi?p=pkgsrc.git;a=summary">summary</a> | <a href="/index.cgi?p=pkgsrc.git;a=shortlog;h=HEAD">shortlog</a> | <a href="/index.cgi?p=pkgsrc.git;a=log;h=HEAD">log</a> | <a href="/index.cgi?p=pkgsrc.git;a=commit;h=HEAD">commit</a> | <a href="/index.cgi?p=pkgsrc.git;a=commitdiff;h=HEAD">commitdiff</a> | tree<br/>
+<br/>
+</div>
+<div class="header">
+<a class="title" href="/index.cgi?p=pkgsrc.git;a=commit;h=HEAD">ddekit bump version</a>
+</div>
+<div class="page_body">
+<table class="tree">
+<tr class="dark">
+<td class="mode">-rw-r--r--</td>
+<td class="size">23</td>
+<td class="list"><a class="list" href="/index.cgi?p=pkgsrc.git;a=blob;f=.gitignore;h=fd0cb29b723a7aae6d8dc90b2ac6c9fb100e5cc1;hb=HEAD">.gitignore</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=blob;f=.gitignore;h=fd0cb29b723a7aae6d8dc90b2ac6c9fb100e5cc1;hb=HEAD">blob</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=.gitignore;h=fd0cb29b723a7aae6d8dc90b2ac6c9fb100e5cc1;hb=HEAD">history</a> | <a href="/index.cgi?p=pkgsrc.git;a=blob_plain;f=.gitignore;hb=HEAD">raw</a></td>
+</tr>
+<tr class="light">
+<td class="mode">-rw-r--r--</td>
+<td class="size">2202</td>
+<td class="list"><a class="list" href="/index.cgi?p=pkgsrc.git;a=blob;f=Makefile;h=597b9db6d6bc35ae39ac6a5390cf6f16385225bf;hb=HEAD">Makefile</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=blob;f=Makefile;h=597b9db6d6bc35ae39ac6a5390cf6f16385225bf;hb=HEAD">blob</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=Makefile;h=597b9db6d6bc35ae39ac6a5390cf6f16385225bf;hb=HEAD">history</a> | <a href="/index.cgi?p=pkgsrc.git;a=blob_plain;f=Makefile;hb=HEAD">raw</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">-rw-r--r--</td>
+<td class="size">99</td>
+<td class="list"><a class="list" href="/index.cgi?p=pkgsrc.git;a=blob;f=README;h=4ac9e84dbdf1d30e46022e3bae0363d0e2af1cad;hb=HEAD">README</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=blob;f=README;h=4ac9e84dbdf1d30e46022e3bae0363d0e2af1cad;hb=HEAD">blob</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=README;h=4ac9e84dbdf1d30e46022e3bae0363d0e2af1cad;hb=HEAD">history</a> | <a href="/index.cgi?p=pkgsrc.git;a=blob_plain;f=README;hb=HEAD">raw</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=archivers;h=730791616bd87a4d9e37ead0324b382df39fac8a;hb=HEAD">archivers</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=archivers;h=730791616bd87a4d9e37ead0324b382df39fac8a;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=archivers;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=audio;h=c5398b4922fa5216588390cb9cb1363db17fb4a2;hb=HEAD">audio</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=audio;h=c5398b4922fa5216588390cb9cb1363db17fb4a2;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=audio;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=benchmarks;h=fe90845f8dc69048c69e6c9eeec000c69953f55a;hb=HEAD">benchmarks</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=benchmarks;h=fe90845f8dc69048c69e6c9eeec000c69953f55a;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=benchmarks;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=biology;h=7850e0bc826279a11f3454f63b7620f39c9be4d3;hb=HEAD">biology</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=biology;h=7850e0bc826279a11f3454f63b7620f39c9be4d3;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=biology;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=bootstrap;h=5d8eddf103b29a2078871e90f32ac6ae672874c2;hb=HEAD">bootstrap</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=bootstrap;h=5d8eddf103b29a2078871e90f32ac6ae672874c2;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=bootstrap;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=cad;h=32997cf0de33118ce16084e2069b7d83339f6b3c;hb=HEAD">cad</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=cad;h=32997cf0de33118ce16084e2069b7d83339f6b3c;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=cad;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=chat;h=41fa8846e0e123ebe87ae80da401b94a4f224bd3;hb=HEAD">chat</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=chat;h=41fa8846e0e123ebe87ae80da401b94a4f224bd3;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=chat;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=comms;h=21d656662ca2d2f85da1893738cdaf3811677a09;hb=HEAD">comms</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=comms;h=21d656662ca2d2f85da1893738cdaf3811677a09;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=comms;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=converters;h=bf8ee4f028f00499fc9e44fb786d5d81bc050b7e;hb=HEAD">converters</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=converters;h=bf8ee4f028f00499fc9e44fb786d5d81bc050b7e;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=converters;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=cross;h=ded04ecb4e55014b95d44d1eed0628eee1402697;hb=HEAD">cross</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=cross;h=ded04ecb4e55014b95d44d1eed0628eee1402697;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=cross;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=databases;h=39847d45a61ed3d83da14b6967a19bbd3e8de099;hb=HEAD">databases</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=databases;h=39847d45a61ed3d83da14b6967a19bbd3e8de099;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=databases;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=devel;h=c5037618e53bcfbf62588b453f496d53e76d3dbd;hb=HEAD">devel</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=devel;h=c5037618e53bcfbf62588b453f496d53e76d3dbd;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=devel;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=distfiles;h=8d33319e85aa66a93e9989e24cdf86b026fba0e6;hb=HEAD">distfiles</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=distfiles;h=8d33319e85aa66a93e9989e24cdf86b026fba0e6;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=distfiles;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=doc;h=0b241c38e013c80342c60ad6739b9c7a2092dd17;hb=HEAD">doc</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=doc;h=0b241c38e013c80342c60ad6739b9c7a2092dd17;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=doc;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=editors;h=6efe669737a07928a29447ce1264562f07d55168;hb=HEAD">editors</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=editors;h=6efe669737a07928a29447ce1264562f07d55168;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=editors;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=emulators;h=e4d8dc47fa999d2e1ce8dfdd4dc6ecfa1fda2359;hb=HEAD">emulators</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=emulators;h=e4d8dc47fa999d2e1ce8dfdd4dc6ecfa1fda2359;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=emulators;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=filesystems;h=fc9179e9d105e167bfdee3f3fc0df2c508968070;hb=HEAD">filesystems</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=filesystems;h=fc9179e9d105e167bfdee3f3fc0df2c508968070;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=filesystems;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=finance;h=0e04bde91a584bb4523889e6ce3254aad7985add;hb=HEAD">finance</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=finance;h=0e04bde91a584bb4523889e6ce3254aad7985add;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=finance;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=fonts;h=80e9df2adc1f3ca88368a96b3b73c6fe23f1b2e2;hb=HEAD">fonts</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=fonts;h=80e9df2adc1f3ca88368a96b3b73c6fe23f1b2e2;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=fonts;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=games;h=998285808fd0e519ba52e029de432e4a6b9c5086;hb=HEAD">games</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=games;h=998285808fd0e519ba52e029de432e4a6b9c5086;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=games;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=geography;h=ddb7586519df0429935a82b2285082f0984db5c4;hb=HEAD">geography</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=geography;h=ddb7586519df0429935a82b2285082f0984db5c4;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=geography;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=graphics;h=908c263fd1bcd94b65e62ea77ab6064475a41923;hb=HEAD">graphics</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=graphics;h=908c263fd1bcd94b65e62ea77ab6064475a41923;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=graphics;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=ham;h=b499b83fd11bcce584877f14075595844e3eca2f;hb=HEAD">ham</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=ham;h=b499b83fd11bcce584877f14075595844e3eca2f;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=ham;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=inputmethod;h=929b71d1a8bb583f36556ce81c3ffa6d930b44af;hb=HEAD">inputmethod</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=inputmethod;h=929b71d1a8bb583f36556ce81c3ffa6d930b44af;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=inputmethod;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=lang;h=c514eb54d7cb71a85081f798bae73340597dabc0;hb=HEAD">lang</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=lang;h=c514eb54d7cb71a85081f798bae73340597dabc0;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=lang;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=licenses;h=49292e495c4fd63635a4c44f7511b9dc3b98ac20;hb=HEAD">licenses</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=licenses;h=49292e495c4fd63635a4c44f7511b9dc3b98ac20;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=licenses;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=mail;h=f019e145042c557ebf312fb7c9d34533ca73f609;hb=HEAD">mail</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=mail;h=f019e145042c557ebf312fb7c9d34533ca73f609;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=mail;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=math;h=fa3402827c49eb6a0fcced9afacd78cb9c25e5a5;hb=HEAD">math</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=math;h=fa3402827c49eb6a0fcced9afacd78cb9c25e5a5;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=math;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=mbone;h=3b1027116184769eb70809e80915d0b2869fa6e0;hb=HEAD">mbone</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=mbone;h=3b1027116184769eb70809e80915d0b2869fa6e0;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=mbone;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=meta-pkgs;h=69f73f9da5abc311e240512f763510b8747ffba7;hb=HEAD">meta-pkgs</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=meta-pkgs;h=69f73f9da5abc311e240512f763510b8747ffba7;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=meta-pkgs;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=minix;h=7d9dfbe006cf658dc73189306ee35a6e9489c01d;hb=HEAD">minix</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=minix;h=7d9dfbe006cf658dc73189306ee35a6e9489c01d;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=minix;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=misc;h=50fa9a0115e6cc755c1119fa688f8abf3dc3edd9;hb=HEAD">misc</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=misc;h=50fa9a0115e6cc755c1119fa688f8abf3dc3edd9;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=misc;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=mk;h=8c39563eb0118fa9b1afaba60899ae4cd4a56ef6;hb=HEAD">mk</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=mk;h=8c39563eb0118fa9b1afaba60899ae4cd4a56ef6;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=mk;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=multimedia;h=047351be9f67cabd5fb34b5e2dcf9603be27229c;hb=HEAD">multimedia</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=multimedia;h=047351be9f67cabd5fb34b5e2dcf9603be27229c;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=multimedia;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=net;h=0aa0e5802f38d1677e6f5b680db557a17b64c9cc;hb=HEAD">net</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=net;h=0aa0e5802f38d1677e6f5b680db557a17b64c9cc;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=net;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=news;h=bea84c3bd464e407281540ce9daa00779295156b;hb=HEAD">news</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=news;h=bea84c3bd464e407281540ce9daa00779295156b;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=news;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=packages;h=8d33319e85aa66a93e9989e24cdf86b026fba0e6;hb=HEAD">packages</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=packages;h=8d33319e85aa66a93e9989e24cdf86b026fba0e6;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=packages;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=parallel;h=1f9898c267069ac6eafbf0e8c6b6d5e03d3010d4;hb=HEAD">parallel</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=parallel;h=1f9898c267069ac6eafbf0e8c6b6d5e03d3010d4;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=parallel;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">-rwxr-xr-x</td>
+<td class="size">3406</td>
+<td class="list"><a class="list" href="/index.cgi?p=pkgsrc.git;a=blob;f=pkglocate;h=5bfb09f471d2171a13082b2ddea10f49cbed88c6;hb=HEAD">pkglocate</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=blob;f=pkglocate;h=5bfb09f471d2171a13082b2ddea10f49cbed88c6;hb=HEAD">blob</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=pkglocate;h=5bfb09f471d2171a13082b2ddea10f49cbed88c6;hb=HEAD">history</a> | <a href="/index.cgi?p=pkgsrc.git;a=blob_plain;f=pkglocate;hb=HEAD">raw</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=pkgtools;h=440ec31c232f17eacb450c387e90f1cead6728c4;hb=HEAD">pkgtools</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=pkgtools;h=440ec31c232f17eacb450c387e90f1cead6728c4;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=pkgtools;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=print;h=0f86eb01e8003750c2c3348f0a1c5a578587e171;hb=HEAD">print</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=print;h=0f86eb01e8003750c2c3348f0a1c5a578587e171;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=print;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=regress;h=179ae517202610fc3615b3af8543bcf3e90fe405;hb=HEAD">regress</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=regress;h=179ae517202610fc3615b3af8543bcf3e90fe405;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=regress;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=security;h=35a599b970af1c400b6f99016c9da2f91fd550f2;hb=HEAD">security</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=security;h=35a599b970af1c400b6f99016c9da2f91fd550f2;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=security;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=shells;h=52b727a15bfa07a22041e0d1ad00052cae715c9c;hb=HEAD">shells</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=shells;h=52b727a15bfa07a22041e0d1ad00052cae715c9c;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=shells;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=sysutils;h=f5ac73a860b794a5c9aee8cc9686244ef8c90d88;hb=HEAD">sysutils</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=sysutils;h=f5ac73a860b794a5c9aee8cc9686244ef8c90d88;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=sysutils;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=templates;h=ed520ca11bc4318772a850bfbb474bbc4494c59e;hb=HEAD">templates</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=templates;h=ed520ca11bc4318772a850bfbb474bbc4494c59e;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=templates;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=textproc;h=e415dae993cd45c8297ef8d42b62aa186aac3858;hb=HEAD">textproc</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=textproc;h=e415dae993cd45c8297ef8d42b62aa186aac3858;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=textproc;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=time;h=4ec4dca705cde4f62f1e37d0c3669248e1a5abce;hb=HEAD">time</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=time;h=4ec4dca705cde4f62f1e37d0c3669248e1a5abce;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=time;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=wm;h=86ae61fbe752a87c876d724a4555bee31854e515;hb=HEAD">wm</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=wm;h=86ae61fbe752a87c876d724a4555bee31854e515;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=wm;hb=HEAD">history</a></td>
+</tr>
+<tr class="dark">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=www;h=fbae8c12364090f6ff8546c6ca3c31362497b3b5;hb=HEAD">www</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=www;h=fbae8c12364090f6ff8546c6ca3c31362497b3b5;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=www;hb=HEAD">history</a></td>
+</tr>
+<tr class="light">
+<td class="mode">drwxr-xr-x</td>
+<td class="size">-</td>
+<td class="list"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=x11;h=189dfde4bd9166907062ff25781aac32981bc16f;hb=HEAD">x11</a></td>
+<td class="link"><a href="/index.cgi?p=pkgsrc.git;a=tree;f=x11;h=189dfde4bd9166907062ff25781aac32981bc16f;hb=HEAD">tree</a> | <a href="/index.cgi?p=pkgsrc.git;a=history;f=x11;hb=HEAD">history</a></td>
+</tr>
+</table>
+</div><div class="page_footer">
+<div class="page_footer_text">Minix3 previous pkgsrc repository</div>
+<a class="rss_logo" href="/index.cgi?p=pkgsrc.git;a=rss" title="log RSS feed">RSS</a>
+<a class="rss_logo" href="/index.cgi?p=pkgsrc.git;a=atom" title="log Atom feed">Atom</a>
+</div>
+<script type="text/javascript" src="static/gitweb.js"></script>
+<script type="text/javascript">
+window.onload = function () {
+	var tz_cookie = { name: 'gitweb_tz', expires: 14, path: '/' };
+	onloadTZSetup('local', tz_cookie, 'datetime');
+};
+</script>
+</body>
+</html>

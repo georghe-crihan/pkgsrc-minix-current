@@ -1,0 +1,42 @@
+#!/bin/sh
+fetchf()
+{
+local f=${1}
+    fetch -o ${f} "https://git.minix3.org/index.cgi?p=pkgsrc.git;a=blob_plain;f=$f;hb=HEAD"
+}
+m=x11/gtk3
+t=$m
+p="DESCR Makefile PLIST buildlink3.mk distinfo modules.mk options.mk"
+t=$m/files
+p=immodules.tmpl
+t=$m/patches
+p="patch-aj patch-config.h.in patch-configure patch-configure.ac patch-gdk_x11_gdkwindow-x11.h patch-gtk_a11y_gail.c"
+t=devel/gettext-lib
+t=lang/perl5
+t=devel/glib2
+t=devel/gobject-introspection
+t=databases/shared-mime-info
+t=graphics/gdk-pixbuf2
+t=fonts/fontconfig
+t=graphics/freetype2
+t=x11/libX11
+t=x11/libXft
+t=x11/libXt
+t=x11/libXi
+t=x11/libXcursor
+t=x11/libXfixes
+t=x11/libXrender
+t=x11/libXrandr
+t=x11/libXcomposite
+t=x11/libXinerama
+t=x11/libXext
+t=devel/pango
+t=graphics/cairo-gobject
+t=graphics/cairo
+t=devel/at-spi2-atk
+t=devel/atk
+
+mkdir -p ${t}
+for f in ${p}; do
+    fetchf ${t}/${f}
+done

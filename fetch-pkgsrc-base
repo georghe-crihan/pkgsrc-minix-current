@@ -1,0 +1,101 @@
+#!/bin/sh
+
+fetchf()
+{
+local f=${1}
+    fetch -o ${f} "https://git.minix3.org/index.cgi?p=pkgsrc.git;a=blob_plain;f=$f;hb=HEAD"
+}
+t=./
+p="Makefile .gitignore README"
+t=bootstrap
+p="README README.AIX README.Cygwin README.FreeBSD README.HPUX README.Haiku README.IRIX README.IRIX5.3 README.Interix README.Linux README.MacOSX README.Minix3 README.MirBSD README.OSF1 README.OpenBSD README.Solaris bootstrap cleanup macpkg.pmproj.in testbootstrap"
+t=mk
+p="alternatives.mk apache.mk bdb.buildlink3.mk bsd.fast.prefs.mk bsd.hacks.mk bsd.makevars.mk bsd.options.mk bsd.pkg.barrier.mk bsd.pkg.clean.mk bsd.pkg.debug.mk bsd.pkg.error.mk bsd.pkg.mk bsd.pkg.readme.mk bsd.pkg.subdir.mk bsd.pkg.update.mk bsd.pkg.use.mk bsd.prefs.mk bsd.utils.mk compiler.mk curses.buildlink3.mk curses.builtin.mk db1.builtin.mk djbware.mk dlopen.buildlink3.mk dlopen.builtin.mk endian.mk fam.buildlink3.mk find-prefix.mk fuse.buildlink3.mk giflib.buildlink3.mk java-env.mk java-vm.mk jpeg.buildlink3.mk krb5.buildlink3.mk license.mk motif.buildlink3.mk mpi.buildlink3.mk mysql.buildlink3.mk omf-scrollkeeper.mk oss.buildlink3.mk oss.builtin.mk pam.buildlink3.mk pf.buildlink3.mk pgsql.buildlink3.mk pkg-build-options.mk pthread.buildlink3.mk pthread.builtin.mk resolv.buildlink3.mk solaris-pam.builtin.mk subst.mk termcap.buildlink3.mk termcap.builtin.mk terminfo.buildlink3.mk terminfo.builtin.mk tex.buildlink3.mk unprivileged.mk x11.buildlink3.mk x11.builtin.mk x11.version.mk xaw.buildlink3.mk"
+t=distfiles
+p=".cvsignore"
+t=mk/buildlink3
+p="BUILDLINK3_DG PKGVIEWS_UG README TODO bsd.buildlink3.mk bsd.builtin.mk buildcmd-libtool cleanup-libtool cmd-sink-libtool find-files.mk find-libs.mk libtool-fix-la pkgconfig-builtin.mk scan-libtool show-buildlink3.sh transform-libtool"
+t=mk/bulk
+p="TODO bsd.bulk-pkg.mk build build.conf-example do-sandbox-build do-sandbox-upload environment.txt parallel.txt post-build post-build-conf pre-build printdepends printindex printindex.1 sort-packages tflat upload"
+t=mk/check
+p="bsd.check-vars.mk bsd.check.mk check-fakehome.mk check-files.mk check-headers.mk check-headers.sh check-interpreter.mk check-perms.mk check-portability.awk check-portability.mk check-portability.sh check-shlibs-elf.awk check-shlibs.mk check-stripped.mk check-subr.awk check-subr.sh check-vulnerable.mk check-wrkref.mk"
+t=mk/checksum
+p="bsd.checksum-vars.mk bsd.checksum.mk checksum checksum.mk distinfo.awk"
+t=mk/cmake-Modules/Platform
+p=UnixPaths.cmake
+t=mk/compiler
+p="ccache.mk ccc.mk clang.mk distcc.mk f2c.mk g95.mk gcc.mk hp.mk icc.mk ido.mk mipspro-ucode.mk mipspro.mk pcc.mk sunpro.mk xlc.mk"
+t=mk/configure
+p="bsd.configure-vars.mk bsd.configure.mk cmake-rewrite.awk cmake.mk config-override.mk configure.mk gnu-configure.mk install-sh-override.mk libtool-override.mk pkg-config-override.mk replace-interpreter.mk replace-localedir.mk"
+t=mk/defaults
+pkg="mk.conf obsolete.mk options.description"
+t=mk/depends
+p="bsd.depends-vars.mk bsd.depends.mk depends.mk"
+t=mk/emulator
+p="README aix.mk bsdi.mk darwin-opendarwin.mk darwin.mk emulator-vars.mk emulator.mk freebsd.mk irix.mk linux-suse.mk linux.mk merge-distinfo.awk netbsd-compat.mk netbsd.mk osf1-netscape.mk osf1.mk pkg-plain.mk pkg-rpm.mk solaris.mk sunos.mk"
+t=mk/extract
+p="bsd.extract-vars.mk bsd.extract.mk extract extract.mk"
+t=mk/features
+p="features-vars.mk features.mk"
+t=mk/fetch
+p="bsd.fetch-vars.mk bsd.fetch.mk distclean.mk fetch fetch-list.mk fetch.mk sites.mk"
+t=mk/gnu-config
+p="config.guess config.rpath config.sub libtool-1.4.m4 missing"
+t=mk/help
+p="c++.help c-functions.help c.help debug.help destdir.help directories.help distname.help env.help help.awk help.help help.mk man.help msg.help notonly.help ulimit.help undefined-reference.help"
+t=mk/install
+p="bin-install.mk bsd.install-vars.mk bsd.install.mk deinstall.mk install.mk replace.mk"
+t=mk/internal
+p=locking.mk
+t=mk/misc
+p="can-be-built-here.mk category.mk common.mk developer.mk import.mk show.mk toplevel.mk uac-manifest uac-manifest.mk warnings.mk"
+t=mk/package
+p="bsd.package.mk package.mk"
+t=mk/patch
+p="bsd.patch-vars.mk bsd.patch.mk patch.mk"
+t=mk/pbulk
+p="pbulk-index.mk"
+t=mk/pkgformat
+p="README bsd.pkgformat-vars.mk bsd.pkgformat.mk"
+t=mk/pkgformat/pkg
+p="check.mk deinstall.mk depends.mk install.mk list-dependencies metadata.mk package.mk pkgformat-vars.mk pkgformat.mk reduce-depends.awk reduce-resolved-depends.awk register-dependencies replace.mk resolve-dependencies utility.mk views.mk"
+t=mk/pkginstall
+p="bsd.pkginstall.mk deinstall deinstall-pre dirs files fonts footer header info-files install install-post perms shell shlibs usergroup usergroup-check usergroupfuncs usergroupfuncs.DragonFly usergroupfuncs.FreeBSD usergroupfuncs.Linux usergroupfuncs.MirBSD"
+t=mk/platform
+p="AIX.mk BSDOS.mk Cygwin.mk Darwin.mk DragonFly.mk FreeBSD.mk FreeMiNT.mk HPUX.mk Haiku.mk IRIX.mk Interix.mk Linux.mk Minix.mk MirBSD.mk NetBSD.mk OSF1.mk OpenBSD.mk QNX.mk README SunOS.mk UnixWare.mk"
+t=mk/plist
+p="bsd.plist.mk common-dirs.mtree doc-compress libtool-expand plist-cygwin.awk plist-default.awk plist-functions.awk plist-gnu.awk plist-info.awk plist-libtool.awk plist-locale.awk plist-macros.awk plist-man.awk plist-subst.awk plist.mk print-plist.mk shlib-aout.awk shlib-dylib.awk shlib-elf.awk shlib-none.awk shlib-pe.awk shlib-som.awk"
+t=mk/scripts
+p="binpkg-cache binpkg-scan chkdatabase.awk depends-depth-first.awk fail genindex.awk genreadme.awk mkdatabase mkreadme pkg_path remove_todo shell-lib shlib-type"
+t=mk/tools
+p="autoconf.mk automake.mk bison.mk bsd.tools.mk cmake.mk create.mk defaults.mk digest.mk flex.mk gettext.mk gmake.mk imake.mk intltool.mk ldconfig.mk make.mk msgfmt-msgctxt.awk msgfmt-msgid_plural.awk msgfmt.sh perl.mk pkg-config.mk replace.mk rpcgen.mk strip.mk texinfo.mk tools.AIX.mk tools.BSDOS.mk tools.Cygwin.mk tools.Darwin.mk tools.DragonFly.mk tools.FreeBSD.mk tools.FreeMiNT.mk tools.HPUX.mk tools.Haiku.mk tools.IRIX.mk tools.Interix.mk tools.Linux.mk tools.Minix.mk tools.MirBSD.mk tools.NetBSD.mk tools.OSF1.mk tools.OpenBSD.mk tools.SunOS.mk tools.UnixWare.mk zip.mk"
+t=mk/wrapper
+p="NOTES arg-pp-darwin-gcc arg-pp-main arg-pp-mipspro-cc arg-pp-sunpro-cxx arg-source bsd.wrapper.mk buildcmd cmd-sink cmd-sink-aix-cc cmd-sink-aix-ld cmd-sink-aix-xlc cmd-sink-cross-cpp cmd-sink-cross-gcc cmd-sink-cross-gxx cmd-sink-darwin-xlc cmd-sink-hpux-cc cmd-sink-hpux-ld cmd-sink-icc-cc cmd-sink-icc81-cc cmd-sink-interix-gcc cmd-sink-interix-ld cmd-sink-irix-cc cmd-sink-irix-ld cmd-sink-ld cmd-sink-osf1-cc cmd-sink-osf1-ld cmd-sink-solaris-imake cmd-sink-sunpro-cxx cmd-sink-unixware-gcc gen-reorder.sh gen-transform.sh logic scan test-transform.sh transform-aix-cc transform-ccc-cc transform-gcc transform-icc-cc transform-ido-cc transform-mipspro-cc transform-mipspro-ucode-cc transform-sunpro-cc transform-xlc-cc wrapper-defs.mk wrapper-subr.sh wrapper.sh"
+t=doc
+p="BRANCHES CHANGES-1997 CHANGES-1998 CHANGES-1999 CHANGES-2000 CHANGES-2001 CHANGES-2002 CHANGES-2003 CHANGES-2004 CHANGES-2005 CHANGES-2006 CHANGES-2007 CHANGES-2008 CHANGES-2009 CHANGES-2010 CHANGES-2011 CHANGES-2012 CHANGES-2013 HOWTO-dev-crosscompile HOWTO-distcc HOWTO-pbulk HOWTO-use-crosscompile Makefile-example NEWS RESPONSIBLE TODO TODO.crosscompile pkgsrc-2011Q2 pkgsrc-2011Q3 pkgsrc.html pkgsrc.txt"
+t=doc/guide
+p="DESCR Makefile Makefile.common PLIST README distinfo"
+t=doc/guide/files
+p="Makefile binary.xml build.xml buildlink.xml bulk.xml chapters.ent components.xml configuring.xml creating.xml debug.xml devfaq.xml editing.xml examples.xml faq.xml files.xml fixes.xml ftp-layout.xml getting.xml gnome.xml infr.design.xml introduction.xml logs.xml makefile.xml options.xml pkginstall.xml pkgsrc.ent pkgsrc.xml platforms.xml plist.xml porting.xml regression.xml submit.xml tools.xml using.xml"
+t=doc/guide/files/share
+p="catalog default-html-chunk.xsl default-html.xsl default.dsl"
+t=licenses
+p="2-clause-bsd 3proxy-0.5-license acm-license adobe-acrobat-license adobe-flashsupport-license amap-license amaya-license amazon-software-license amiwm-license apache-1.1 apache-2.0 apple-admin-license apple-public-source-license arphic-public artistic artistic-2.0 astrolog-license bcmfw-license beer-ware bicom-license boost-license cardboard-schedule-license cc-by-nc-nd-v2.5-license cc-by-nc-nd-v3.0-license cc-by-sa-v3.0 cddl-1.0 cdif-license cisco-license citrix_ica-license corecode-license corel-license cpl-1.0 cucipop-license cyberbit-ttf-license dbz-ttf-license dcc-free-license djb-nonlicense dungeon-license eag-license eclipse-license edcommon-license emiclock-license epl-v1.0 epsg-license erlang-public-license estic-license evermono-license f-prot-antivirus-license faces-license fairware-license fep-license flash-license foiltex-license fs-kit-license gate88-license gated-license generic-nonlicense glimpse-license gnu-agpl-v3 gnu-fdl-v1.1 gnu-fdl-v1.2 gnu-fdl-v1.3 gnu-gpl-v1 gnu-gpl-v2 gnu-gpl-v3 gnu-lgpl-v2 gnu-lgpl-v2.1 gnu-lgpl-v3 hptools-license hydra-license info-zip inform-license inlineegg-license intel-acpica-license intel-icc11-license intel-ipw-license ion-license iozone-license ipafont isc jbuilder-jit-license jdk-license jdk13-license jpeg2ps-license kermit-license kreativekorp-free-license lame-license lc-license ldpc-license lft-license lha-license libFoundation-license lppl-1.3c lucent m2crypto-license mac-license magic-license majordomo-license mame-license miros mit modified-bsd molden-license morganstanley-license mozilla-trademark-license mpg123-license mpl-1.0 mpl-1.1 mpl-2.0 mplayer-codec-license mplusfont ms-ttf-license mush-license nethack-license nntpcache-license nntpclnt-license nvidia-license ofl-v1.0 ofl-v1.1 openmotif-license opera-1100-license opera-1200-license opera-eula oracle-binary-code-license original-bsd osl pcc-license pcps-license php phylip-license pine-license postfix-license postgresql-license povray-license powder-license public-domain pvs-license python-software-foundation qpl-v1.0 quake3arena-license quakedata-license radiance-license rar-license rsaref-license ruby-license sap-license scsl23-license scsl3-jini-tsa-1.0-license sendmail-license sendmail-open-source-license sgi-free-software-b-v2.0 shorten-license simian-license skype-license skype21-license sleepycat-public softmaker-office-demo-license speedtouch-firmware-license spim-license spin-license squeezeboxserver-license srp_client-license ssh-communications-security-license su2-license sun-iss-license sun-jdk14-license sun-jdk6-license sun-jre14-license sun-jre6-license sun-jrl-16-license sun-jsdk20-license sun-openlook-license sun-swing-license sysinfo-license szip-license tarsnap-license tdir-license teamspeak-license-200700213 teapot-license tin-license titrax-license trn-license ttd-pseudolicense ubuntu-font-license unace-license unace-source-license unarj-license unlicense unrar-license uvscan-license velena-license vhf-public-license vim-license vmware-license x11 xanim-license xdoom-license xephem-license xmill-license xv-license zlib zoo-license zpl"
+t=templates
+p="README.all README.category README.ipv6 README.pkg README.top pkg-daemon.gif"
+m=cross/COMMON
+t=$m
+p="PLIST-binutils PLIST-egcs PLIST-egcs-cxx PLIST-egcs-cxx-runtime PLIST-egcs-f77 PLIST-egcs-f77-runtime PLIST-egcs-objc PLIST-egcs-objc-runtime buwrapper.c cross.mk exclude netbsd.mk"
+t=$m/patches-binutils
+p=patch-aa
+t=$m/patches-egcs
+p="patch-aa patch-ab patch-ac patch-ad patch-ae patch-af patch-ag patch-ah patch-ai patch-aj patch-ak patch-sh patch-st"
+m=minix
+t=$m
+p="Makefile limited_list.minimal limited_list.pbulk minibootstrap.sh mk.conf.minix pbulk-jail.sh pbulk-ng.sh pbulk.conf pbulk.sh"
+
+
+mkdir -p $t
+for f in ${p}; do
+    fetchf ${t}/${f}
+done

@@ -1,0 +1,5 @@
+#!/bin/sh
+wrapperlog="${TOOLS_WRAPPER_LOG-/usr/src/pkgsrc/work/pkgtools/bootstrap-mk-files/work/.work.log}"
+/bin/echo "[*] "/usr/src/pkgsrc/work/pkgtools/bootstrap-mk-files/work/.tools/bin/perl" $@" >> $wrapperlog
+/bin/echo "<.> /bin/echo >> /usr/src/pkgsrc/work/pkgtools/bootstrap-mk-files/work/.warning/perl "Please add USE_TOOLS+=perl to the package Makefile.";  /bin/sh /usr/src/pkgsrc/mk/scripts/fail /bin/echo 1>&2 "ERROR:" "To use this tool, add USE_TOOLS+=perl to the package Makefile."" >> $wrapperlog
+/bin/echo >> /usr/src/pkgsrc/work/pkgtools/bootstrap-mk-files/work/.warning/perl "Please add USE_TOOLS+=perl to the package Makefile.";  /bin/sh /usr/src/pkgsrc/mk/scripts/fail /bin/echo 1>&2 "ERROR:" "To use this tool, add USE_TOOLS+=perl to the package Makefile."

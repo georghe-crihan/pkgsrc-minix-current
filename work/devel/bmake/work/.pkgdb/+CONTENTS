@@ -1,0 +1,9 @@
+@cwd /usr/pkg
+@name bmake-20110606nb1
+@blddep bootstrap-mk-files-20120415
+@pkgdep bootstrap-mk-files-[0-9]*
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 01:22:29 zuntum Exp $
+bin/bmake
+@comment MD5:1408de86cc238bc77cbb3c2fa70ddd98
+man/man1/bmake.1
+@comment MD5:385a6e3c0622f21b3da214a4a7c3ef08

@@ -1,0 +1,56 @@
+cache_lookup() {
+case $arg in
+--version) arg=--version; split_arg=no; cachehit=yes ;;
+-Qunused-arguments) arg=-Qunused-arguments; split_arg=no; cachehit=yes ;;
+-I/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/.buildlink/include) arg=-I/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/.buildlink/include; split_arg=no; cachehit=yes ;;
+-L/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/.buildlink/lib) arg=-L/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/.buildlink/lib; split_arg=no; cachehit=yes ;;
+-v) arg=-v; split_arg=no; cachehit=yes ;;
+-V) arg=-V; split_arg=no; cachehit=yes ;;
+-qversion) arg=-qversion; split_arg=no; cachehit=yes ;;
+-Wno-error) arg=-Wno-error; split_arg=no; cachehit=yes ;;
+-march=i586) arg=-march=i586; split_arg=no; cachehit=yes ;;
+-Wl,-rpath,/usr/pkg/lib) arg=-Wl,-rpath,/usr/pkg/lib; split_arg=no; cachehit=yes ;;
+-o) arg=-o; split_arg=no; cachehit=yes ;;
+-c) arg=-c; split_arg=no; cachehit=yes ;;
+-g) arg=-g; split_arg=no; cachehit=yes ;;
+-lutil) arg=-lutil; split_arg=yes; cachehit=yes ;;
+-E) arg=-E; split_arg=no; cachehit=yes ;;
+-lnsl) arg=-lnsl; split_arg=yes; cachehit=yes ;;
+-D__DBINTERFACE_PRIVATE) arg=-D__DBINTERFACE_PRIVATE; split_arg=no; cachehit=yes ;;
+-I.) arg=-I.; split_arg=no; cachehit=yes ;;
+-I.) arg=-I.; split_arg=no; cachehit=yes ;;
+-DHAVE_CONFIG_H) arg=-DHAVE_CONFIG_H; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_close.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_close.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_conv.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_conv.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_debug.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_debug.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_delete.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_delete.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_get.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_get.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_open.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_open.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_overflow.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_overflow.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_page.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_page.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_put.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_put.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_search.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_search.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_seq.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_seq.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_split.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_split.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_utils.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/btree/bt_utils.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/db/db.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/db/db.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/hash/hash.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/hash/hash.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/hash/hash_bigkey.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/hash/hash_bigkey.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/hash/hash_buf.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/hash/hash_buf.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/hash/hash_func.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/hash/hash_func.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/hash/hash_log2.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/hash/hash_log2.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/hash/hash_page.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/hash/hash_page.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/hash/ndbm.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/hash/ndbm.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/hash/ndbmdatum.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/hash/ndbmdatum.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/mpool/mpool.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/mpool/mpool.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/recno/rec_close.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/recno/rec_close.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/recno/rec_delete.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/recno/rec_delete.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/recno/rec_get.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/recno/rec_get.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/recno/rec_open.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/recno/rec_open.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/recno/rec_put.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/recno/rec_put.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/recno/rec_search.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/recno/rec_search.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/recno/rec_seq.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/recno/rec_seq.c; split_arg=no; cachehit=yes ;;
+/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/recno/rec_utils.c) arg=/usr/src/pkgsrc/work/pkgtools/libnbcompat/work/libnbcompat-20120702/db/recno/rec_utils.c; split_arg=no; cachehit=yes ;;
+*) cachehit=no ;;
+esac
+}

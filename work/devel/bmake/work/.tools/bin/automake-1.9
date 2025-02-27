@@ -1,0 +1,5 @@
+#!/bin/sh
+wrapperlog="${TOOLS_WRAPPER_LOG-/usr/src/pkgsrc/work/devel/bmake/work/.work.log}"
+/bin/echo "[*] "/usr/src/pkgsrc/work/devel/bmake/work/.tools/bin/automake-1.9" $@" >> $wrapperlog
+/bin/echo "<.> /usr/src/pkgsrc/mk/gnu-config/missing automake" >> $wrapperlog
+/usr/src/pkgsrc/mk/gnu-config/missing automake
